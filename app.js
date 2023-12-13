@@ -14,8 +14,16 @@ app.get("/check", (req,res)=>{
 })
 
 
+
+
 app.get("/api/helloo", (req,res)=>{
     res.send("server is saying hello")
+})
+
+
+
+app.get("/api/abhi", (req,res)=>{
+    res.send({message: "Hello from abhi"})
 })
 
 
