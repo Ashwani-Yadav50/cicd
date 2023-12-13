@@ -4,13 +4,18 @@ require('dotenv').config();
 
 const port = process.env.PORT || 3000;
 
-app.get("/", (req,res)=>{
+app.get("/api/users", (req,res)=>{
     res.send({message: "Hello"})
 })
 
 
 app.get("/check", (req,res)=>{
     res.send("Please check ")
+})
+
+
+app.get("/api/helloo", (req,res)=>{
+    res.send("server is saying hello")
 })
 
 
